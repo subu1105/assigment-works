@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // call back function in addition
+        function calculate(a, b, call) {
+            call(a, b)
+        }
+        function addition(a, b) {
+            let result = a + b
+            console.log(result)
+        }
+        calculate(8, 2, addition)
+
+        // call back function in division 
+
+        function calculate(a, b, call) {
+            call(a, b)
+        }
+        function division(a, b) {
+            let result = a / b
+            console.log(result)
+        }
+        calculate(8, 2, division)
+
+        // find the value of 10 factorial
+
+        let a = 10;
+        let x = 1
+        for (i = 0; i < a; i++) {
+            let result = a - i;
+            x = x * result
+        }
+        console.log(x)
+
+
+        //   callback of array with arrow function
+
+        let arr = [26, 93, 43, 58, 66, 75, 89, 34, 55, 66]
+
+        arr.forEach((a, b) => {
+            console.log(a, b)
+        });
+    </script>
+</body>
+
+</html>
